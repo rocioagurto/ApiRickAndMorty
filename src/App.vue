@@ -6,7 +6,6 @@
           <span class="has-text-white is-uppercase">Rick & Morty</span>
         </h1>
         <span class="subtitle">Personajes</span>
-
         <div class="field has-addons is-pulled-right">
           <div class="control">
             <input v-model="search" type="text" class="input is-rounded" @keyup.enter="searchData">
@@ -17,17 +16,15 @@
         </div>
       </div>
     </div>
-
     <div class="container is-centered">
       <div class="columns is-desktop is-mobile is-tablet is-multiline is-centered">
         <character
-          @showModal="showModal"
-          v-for="character of characters"
-          :key="character.id"
-          :character="character"
+        @showModal="showModal"
+        v-for="character of characters"
+        :key="character.id"
+        :character="character"
         />
       </div>
-
       <nav class="pagination" role="navegation" aria-label="pagination">
         <a class="pagination-previous" @click="changePage(page-1)">Anterior</a>
         <ul class="pagination-list">
@@ -122,7 +119,6 @@ export default {
       this.fetchOne(id);
     },
     async fetchOne(id) {
-      //Llamada a HTTP
       let result = await axios.get(
         `https://rickandmortyapi.com/api/character/${id}/`
       );
