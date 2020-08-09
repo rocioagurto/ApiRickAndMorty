@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div class=" container hero is-dark is-bold">
-      <div class="hero-body">
+      <div class="hero-body is-mobile is-centered">
         <h1 class="title">
           <span class="has-text-white is-uppercase">Rick & Morty</span>
         </h1>
         <span class="subtitle">Personajes</span>
-        <div class="field has-addons is-pulled-right">
+        <div class="field has-addons is-pulled-right ">
           <div class="control">
             <input v-model="search" type="text" class="input is-rounded" @keyup.enter="searchData">
           </div>
@@ -25,11 +25,11 @@
         :character="character"
         />
       </div>
-      <nav class="pagination" role="navegation" aria-label="pagination">
+      <nav class="pagination is-rounded" style="margin: 1rem; margin-bottom: 2rem" role="navegation" aria-label="pagination">
         <a class="pagination-previous" @click="changePage(page-1)">Anterior</a>
         <ul class="pagination-list">
           <li>
-            <a class="pagination-link is-current">{{page}}</a>
+            <a class="pagination-link is-current has-text-white" aria-label="Goto page 1">{{page}}</a>
           </li>
         </ul>
         <a class="pagination-next" @click="changePage(page+1)">Siguiente</a>

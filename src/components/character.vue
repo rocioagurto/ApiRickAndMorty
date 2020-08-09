@@ -1,5 +1,5 @@
 <template>
-  <div class="column is-12-mobile is-6-tablet is-4-desktop">
+  <div class="column is-12-mobile is-4-tablet is-3-desktop">
     <div class="card" style="margin-top:3rem">
       <div class="card-header">
        <figure class="image is-5by4" style="margin: 0 auto; width:28rem; margin:1rem" >
