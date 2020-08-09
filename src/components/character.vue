@@ -1,0 +1,26 @@
+<template>
+  <div class="column is-12-mobile is-6-tablet is-4-desktop">
+    <div class="card" style="margin-top:3rem">
+      <div class="card-header">
+       <figure class="image is-5by4" style="margin: 0 auto; width:28rem; margin:1rem" >
+        <img  :src="character.image" :alt="character.name">
+        </figure>
+      </div>
+      <div class="card-content">
+        <h3 class="title is-size-4">{{character.name}}</h3>
+        <button class="button is-dark is-rounded is-small" @click="showMore(character.id)">Ver más</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ["character"],
+  methods: {
+    showMore(id) {
+      this.$emit("showModal", id);
+    }
+  }
+};
+</script>
