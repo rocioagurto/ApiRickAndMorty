@@ -1,6 +1,7 @@
 # rickandmorty
 ### Link del proyecto: [RickAndMorty](https://rocioagurto.github.io/ApiRickAndMorty/)
 ### Link Api: [Api R&M](https://rickandmortyapi.com/)
+
 ### Vista previa
 #### Desktop:
 ![r m Desktop](https://user-images.githubusercontent.com/60188980/89725308-17969b00-d9dc-11ea-9782-94dc6eafa0d9.JPG)
