@@ -1,5 +1,5 @@
 # rickandmorty
-### Link del proyecto: [RickAndMorty](https://rocioagurto.github.io/ApiRickAndMorty/)
+
 ### Link Api: [Api R&M](https://rickandmortyapi.com/)
 
 ### Vista previa
