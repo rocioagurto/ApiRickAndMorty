@@ -7,8 +7,8 @@
         </figure>
       </div>
       <div class="card-content">
-        <h3 class="title is-size-4">{{character.name}}</h3>
-        <button class="button is-dark is-rounded is-small" @click="showMore(character.id)">Ver más</button>
+        <h3 class="title is-size-5">{{character.name}}</h3>
+        <button class="button is-dark is-rounded is-medium is-size-6" @click="showMore(character.id)"> VER MAS</button>
       </div>
     </div>
   </div>

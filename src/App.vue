@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <div class=" container hero is-dark is-bold">
-      <div class="hero-body is-mobile is-centered">
-        <h1 class="title">
-          <span class="has-text-white is-uppercase">Rick & Morty</span>
-        </h1>
-        <span class="subtitle">Personajes</span>
+    <div class="hero is-dark is-bold" style="padding:4rem">
+      <div class="container hero-body is-mobile is-centered" >
+       
+        <span class="subtitle" style="font-size:2rem">RICK&MORTY </span>
         <div class="field has-addons is-pulled-right ">
           <div class="control">
             <input v-model="search" type="text" class="input is-rounded" @keyup.enter="searchData">
