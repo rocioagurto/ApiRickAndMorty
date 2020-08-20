@@ -4,9 +4,9 @@
       <div class="container hero-body is-mobile is-centered" >
        
         <span class="subtitle" style="font-size:2rem">RICK&MORTY </span>
-        <div class="field has-addons is-pulled-right ">
-          <div class="control">
-            <input v-model="search" type="text" class="input is-rounded" @keyup.enter="searchData">
+        <div class="field has-addons is-pulled-right " style="margin-top:1rem">
+          <div class="control" >
+            <input v-model="search" type="text" class="input is-rounded"  @keyup.enter="searchData">
           </div>
           <div class="control">
             <button class="button is-warning is-rounded" @click="searchData">Buscar</button>
